@@ -5,9 +5,9 @@ Game.Assets = Game.Assets || {};
 
   var Circle = new Engine.Classes.GameObject();
 
-  Circle.OnUpdate(function(ts) {
-    console.log(ts);
-  })
+    Circle.OnUpdate(function(ts) {
+        console.log(ts);
+    });
 
   Game.Assets.Circle = Circle;
 

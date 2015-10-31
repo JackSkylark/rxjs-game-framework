@@ -14,7 +14,7 @@ Engine.Classes.GameObject = function() {
     });
   }
 
-  // building out
+  // building prototype
   var prototype = new Object.create(null);
   prototype.is_enabled = true;
   prototype.is_gameObject = true;
@@ -22,7 +22,7 @@ Engine.Classes.GameObject = function() {
   var gameObject = Object.create(prototype);
 
   gameObject.OnUpdate = function(func) {
-    renderUpdateMethods[] = func;
+      renderUpdateMethods.add(func);
   }
 
   return gameObject;
