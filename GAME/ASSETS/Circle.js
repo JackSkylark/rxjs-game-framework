@@ -3,11 +3,14 @@ Game.Assets = Game.Assets || {};
 
 (function() {
 
-  var Circle = new Engine.Classes.GameObject();
+    var Circle = function() {
+        var obj = new Engine.Classes.GameObject();
 
-    Circle.OnUpdate(function(ts) {
-        console.log(ts);
-    });
+        console.log(obj);
+
+
+        return obj;
+    }
 
   Game.Assets.Circle = Circle;
 
